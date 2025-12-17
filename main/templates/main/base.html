@@ -10,13 +10,16 @@
 <body>
     <header>
         <div class="logo">
-            <h1>ApnaBazaar</h1>
+            <h1>Apna<span>Bazaar</span></h1>
         </div>
         <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/products">Products</a>
-            <a href="/about">About Us</a>
-            <a href="/contact">Contact</a>
+            <a href="{% url 'Home' %}">Home</a>
+            <a href="{% url 'Products' %}">Products</a>
+            <a href="{% url 'About' %}">About Us</a>
+            <a href="{% url 'Contact' %}">Contact</a>
+        </div>
+        <div class="btn-group">
+            <button>Login</button>
         </div>
     </header>
     {% block content %}

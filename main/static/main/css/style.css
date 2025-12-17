@@ -1,7 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightcoral;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+.logo h1 span{
+    color: rgb(255, 64, 39);
+}
+.nav-links a{
+    margin: 0 20px;
+}
+.btn-group button,.hero-content button{
+    padding: 10px 30px;
+    background-color: rgb(255, 64, 39);
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* hero page design */
+
+.hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+.hero-content{
+    width: 40%;
+}
+.hero-content p{
+    margin: 15px 0;
+}
+.hero-content h1{
+    font-size: 40px;
+}
+.hero-content button{
+    padding: 12px 30px;
+    letter-spacing: 2px;
+}
+.hero-img img{
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
 }
